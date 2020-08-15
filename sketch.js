@@ -12,6 +12,7 @@ function setup(){
 function draw(){
   background(0);
 
+  translate(width/2,height/2);
   for(star of stars){
     star.update();
     star.show();
