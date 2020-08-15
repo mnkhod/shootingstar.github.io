@@ -5,6 +5,7 @@ var ms = 1000;
 function setup(){
   body = document.querySelector('body');
   createCanvas(body.offsetWidth,body.offsetHeight);
+  frameRate(30);
 
   for (let i=0;i<800;i++){
    stars[i] = new Star();
