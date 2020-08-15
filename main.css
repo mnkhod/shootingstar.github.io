@@ -20,16 +20,57 @@ canvas {
 .brand h1 {
   display: block;
   text-align: center;
-  font-size: 42px;
+  font-size: 90px;
   margin: 0;
   padding: 0;
   font-family: 'Staatliches', cursive;
   letter-spacing: 2px;
   color : white;
+  position: relative;
+  opacity: 0;
+  animation-name: pop-down;
+  animation-duration: 60s;
+  animation-delay: 2s;
 }
 
 .brand p {
   font-family: 'Press Start 2P', cursive;
-  font-size: 12px;
+  font-size: 30px;
   color : white;
+  opacity: 0;
+  animation-name: pop-up;
+  animation-duration: 60s;
+  animation-delay: 4s;
+}
+
+@keyframes pop-down {
+  0% {
+    opacity: 0;
+    bottom: 30px;
+  }
+
+  5% {
+    opacity: 1;
+    bottom: 0px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    top: 30px;
+  }
+
+  5% {
+    opacity: 1;
+    top: 0px;
+  }
+
+  100% {
+    top: 1;
+  }
 }

@@ -11,7 +11,7 @@ function setup(){
 }
 
 function draw(){
-  let ms = 500;
+  let ms = 1000;
 
   if(mouseX){
     ms = mouseX;
