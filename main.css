@@ -36,6 +36,7 @@ canvas {
 
 .brand p {
   font-family: 'Press Start 2P', cursive;
+  text-align: center;
   font-size: 30px;
   color : white;
   opacity: 0;
@@ -67,4 +68,11 @@ canvas {
     opacity: 1;
     top: 1px;
   }
+}
+
+@media only screen and (max-width:1020px){
+  .brand p {
+    font-size: 12px;
+  }
+    
 }
