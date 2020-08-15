@@ -1,5 +1,6 @@
 var stars = [];
 var speed;
+var ms = 1000;
 
 function setup(){
   body = document.querySelector('body');
@@ -11,7 +12,6 @@ function setup(){
 }
 
 function draw(){
-  let ms = 1000;
 
   if(mouseX){
     ms = mouseX;
@@ -25,4 +25,8 @@ function draw(){
     star.update(speed);
     star.show();
   }
+}
+
+function touchMoved(event){
+  ms = event.changedTouches[0].pageX;
 }
