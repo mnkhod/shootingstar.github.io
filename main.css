@@ -29,8 +29,9 @@ canvas {
   position: relative;
   opacity: 0;
   animation-name: pop-down;
-  animation-duration: 60s;
+  animation-duration: 3s;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 .brand p {
@@ -39,8 +40,9 @@ canvas {
   color : white;
   opacity: 0;
   animation-name: pop-up;
-  animation-duration: 60s;
-  animation-delay: 4s;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes pop-down {
@@ -49,13 +51,9 @@ canvas {
     bottom: 30px;
   }
 
-  5% {
-    opacity: 1;
-    bottom: 0px;
-  }
-
   100% {
     opacity: 1;
+    bottom: 0px;
   }
 }
 
@@ -65,12 +63,8 @@ canvas {
     top: 30px;
   }
 
-  5% {
-    opacity: 1;
-    top: 0px;
-  }
-
   100% {
-    top: 1;
+    opacity: 1;
+    top: 1px;
   }
 }
