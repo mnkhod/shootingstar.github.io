@@ -1,4 +1,5 @@
 var stars = [];
+var speed;
 
 function setup(){
   body = document.querySelector('body');
@@ -10,11 +11,18 @@ function setup(){
 }
 
 function draw(){
+  let ms = 500;
+
+  if(mouseX){
+    ms = mouseX;
+  }
+
   background(0);
+  speed = map(ms,0,width,0,20);
 
   translate(width/2,height/2);
   for(star of stars){
-    star.update();
+    star.update(speed);
     star.show();
   }
 }

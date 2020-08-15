@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0; 
+  margin: 0;
+} 
+
+canvas {
+  vertical-align: top;
+} 
+
+.brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.brand h1 {
+  display: block;
+  text-align: center;
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  color : white;
+}
+
+.brand p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  color : white;
+}
